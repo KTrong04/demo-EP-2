@@ -72,16 +72,18 @@ jobs:
           npm i -D chai@4.3.10 chai-http@4.4.0 mocha@10.3.0
           npm test
 
-      - name: Start auth server (background)
-        working-directory: ./auth
-        env: { NODE_ENV: test }
-        run: |
-          nohup npm start >/tmp/auth.log 2>&1 &
-          timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/3000; do sleep 1; done'
-          echo "Auth server is up"
+      # - name: Start auth server (background)
+      #   working-directory: ./auth
+      #   env: { NODE_ENV: test }
+      #   run: |
+      #     nohup npm start >/tmp/auth.log 2>&1 &
+      #     timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/3000; do sleep 1; done'
+      #     echo "Auth server is up"
 
       - name: Wait for RabbitMQ
         run: timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/5672; do sleep 1; done'
+      - name: Wait for Auth service
+        run: timeout 60 bash -c 'until curl -sf http://127.0.0.1:3000/login || curl -sf http://127.0.0.1:3000/api/health; do sleep 2; done'
 
       - name: Install & Test (product)
         working-directory: ./product
