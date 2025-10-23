@@ -16,11 +16,11 @@ describe("User Authentication", () => {
     app.start();
   });
 
-  after(async () => {
-    await app.authController.authService.deleteTestUsers();
-    await app.disconnectDB();
-    app.stop();
-  });
+  // after(async () => {
+  //   await app.authController.authService.deleteTestUsers();
+  //   await app.disconnectDB();
+  //   app.stop();
+  // });
 
   describe("POST /register", () => {
     it("should register a new user", async () => {
