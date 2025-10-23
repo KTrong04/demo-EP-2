@@ -30,7 +30,7 @@ describe("Products", () => {
     app.stop();
   });
 
-  describe("POST /products", () => {
+  describe("POST /api/products", () => {
     it("should create a new product", async () => {
       const product = {
         name: "Product 1",
