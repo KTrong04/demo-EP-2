@@ -12,7 +12,8 @@ describe("Products", () => {
 
   before(async () => {
     app = new App();
-    await Promise.all([app.connectDB(), app.setupMessageBroker()])
+    await app.init(); // ✅ Gọi init() để tự setup DB, middleware, routes, message broker
+    // await Promise.all([app.connectDB(), app.setupMessageBroker()])
 
     // Authenticate with the auth microservice to get a token
     const authRes = await chai
@@ -30,7 +31,7 @@ describe("Products", () => {
     app.stop();
   });
 
-  describe("POST /api/products", () => {
+  describe("POST /products", () => {
     it("should create a new product", async () => {
       const product = {
         name: "Product 1",
