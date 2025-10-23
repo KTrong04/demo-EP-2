@@ -80,10 +80,13 @@ jobs:
           NODE_ENV: test
           LOGIN_TEST_USER: ${{ secrets.LOGIN_TEST_USER }}
           LOGIN_TEST_PASSWORD: ${{ secrets.LOGIN_TEST_PASSWORD }}
+          MONGODB_PRODUCT_URI: mongodb://127.0.0.1:27017/product_test
+          RABBITMQ_URI: amqp://127.0.0.1:5672
         run: |
           npm ci
           npm i -D chai@4.3.10 chai-http@4.4.0 mocha@10.3.0
           npm test
+
 
 
   # ===========================================

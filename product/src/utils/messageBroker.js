@@ -1,4 +1,5 @@
 const amqp = require("amqplib");
+const config = require("../config"); 
 
 class MessageBroker {
   constructor() {
@@ -11,7 +12,7 @@ class MessageBroker {
 
     try {
       console.log("Connecting to RabbitMQ...");
-      this.connection = await amqp.connect("amqp://rabbitmq:5672");
+      this.connection = await amqp.connect(config.rabbitMQURI);
       this.channel = await this.connection.createChannel();
       console.log("✅ RabbitMQ connected (product-service)");
       return this.channel;
