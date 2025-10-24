@@ -1,0 +1,2954 @@
+[2025-10-24 07:56:38Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Credentials': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Runner': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.runner'
+[2025-10-24 07:56:38Z INFO Worker] Version: 2.329.0
+[2025-10-24 07:56:38Z INFO Worker] Commit: c76c59996c8fa32e989164a5a695efb12608ae5a
+[2025-10-24 07:56:38Z INFO Worker] Culture: en-US
+[2025-10-24 07:56:38Z INFO Worker] UI Culture: en-US
+[2025-10-24 07:56:38Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-10-24 07:56:38Z INFO ProcessChannel] Receiving message of length 22440, with hash '4fa18580641cf815f4658a11d5d78aee29349f88e9b4c21b7532dd9d97df29ab'
+[2025-10-24 07:56:38Z INFO Worker] Message received.
+[2025-10-24 07:56:38Z INFO Worker] Job message:
+ {
+  "environmentVariables": [
+    {
+      "type": 2,
+      "file": 1,
+      "line": 12,
+      "col": 3,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 12,
+            "col": 3,
+            "lit": "DOCKERHUB_USERNAME"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 12,
+            "col": 23,
+            "expr": "secrets.DOCKERHUB_USERNAME"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 13,
+            "col": 3,
+            "lit": "DOCKERHUB_TOKEN"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 13,
+            "col": 20,
+            "expr": "secrets.DOCKERHUB_TOKEN"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 14,
+            "col": 3,
+            "lit": "IMAGE_TAG_SHA"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 14,
+            "col": 18,
+            "expr": "format('sha-{0}', github.sha)"
+          }
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "file": 1,
+      "line": 196,
+      "col": 7,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 196,
+            "col": 7,
+            "lit": "DOCKERHUB_USERNAME"
+          },
+          "value": {
+            "type": 3,
+            "file": 1,
+            "line": 196,
+            "col": 27,
+            "expr": "secrets.DOCKERHUB_USERNAME"
+          }
+        },
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 197,
+            "col": 7,
+            "lit": "IMAGE_TAG"
+          },
+          "value": {
+            "type": 0,
+            "file": 1,
+            "line": 197,
+            "col": 18,
+            "lit": "latest"
+          }
+        }
+      ]
+    }
+  ],
+  "fileTable": [
+    ".github/workflows/ci-cd.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 200,
+        "col": 15,
+        "lit": "Check Docker environment"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 202,
+              "col": 14,
+              "lit": "docker --version\ndocker compose version\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 201,
+              "col": 16,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "efb1d993-5426-4ff0-a875-cf3241207230",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "docker/login-action",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 206,
+        "col": 15,
+        "lit": "Docker login"
+      },
+      "contextName": "__docker_login-action",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 209,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 209,
+              "col": 11,
+              "lit": "username"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 209,
+              "col": 21,
+              "expr": "secrets.DOCKERHUB_USERNAME"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 210,
+              "col": 11,
+              "lit": "password"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 210,
+              "col": 21,
+              "expr": "secrets.DOCKERHUB_TOKEN"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "57b9d163-0b48-4764-90d1-10952adda73d",
+      "name": "__docker_login-action"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 212,
+        "col": 15,
+        "lit": "Stop old containers"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 214,
+              "col": 14,
+              "lit": "cd /d \"D:\\HK\\HK7\\Lap-trinh-huong-dich-vu\\OnTap\\TH\\demo-2\\EProject-Phase-1\"\ndocker compose down --remove-orphans || exit /b 0\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 213,
+              "col": 16,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "a155f894-dba3-4342-b4eb-7b8d1492e57d",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 218,
+        "col": 15,
+        "lit": "Pull images"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 220,
+              "col": 14,
+              "lit": "docker pull %DOCKERHUB_USERNAME%/api-gateway:%IMAGE_TAG%\ndocker pull %DOCKERHUB_USERNAME%/auth:%IMAGE_TAG%\ndocker pull %DOCKERHUB_USERNAME%/product:%IMAGE_TAG%\ndocker pull %DOCKERHUB_USERNAME%/order:%IMAGE_TAG%\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 219,
+              "col": 16,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8b468c00-6945-4a84-bbcf-a0eb64783159",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 226,
+        "col": 15,
+        "lit": "Generate .env for compose"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 228,
+              "col": 14,
+              "lit": "cd /d \"D:\\HK\\HK7\\Lap-trinh-huong-dich-vu\\OnTap\\TH\\demo-2\\EProject-Phase-1\"\n> .env (\n  echo DOCKERHUB_USERNAME=%DOCKERHUB_USERNAME%\n  echo IMAGE_TAG=%IMAGE_TAG%\n)\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 227,
+              "col": 16,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "d3700b2b-6481-4e9a-b3e2-7a817479b273",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 235,
+        "col": 15,
+        "lit": "Up with docker compose"
+      },
+      "contextName": "__run_5",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 237,
+              "col": 14,
+              "lit": "cd /d \"D:\\HK\\HK7\\Lap-trinh-huong-dich-vu\\OnTap\\TH\\demo-2\\EProject-Phase-1\"\ndocker compose up -d --remove-orphans --force-recreate\ndocker ps\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 236,
+              "col": 16,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "577699f8-02f0-48ce-96b0-988379c941c3",
+      "name": "__run_5"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DOCKERHUB_TOKEN": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DOCKERHUB_USERNAME": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"write\"}"
+    },
+    "system.orchestrationId": {
+      "value": "416a4556-1ca7-4a45-8a78-5786fef28142.deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "Deploy on Localhost (Windows Runner)"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "416a4556-1ca7-4a45-8a78-5786fef28142",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "416a4556-1ca7-4a45-8a78-5786fef28142",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "f65c00ee-4121-598d-a3cb-9219bff7025d",
+  "jobDisplayName": "Deploy on Localhost (Windows Runner)",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/rDR0j2bFxT8DzTd37g1D7fyKvaiJgCf6Hzn8lY8Fwr5YR5L3hN/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus6.actions.githubusercontent.com/rDR0j2bFxT8DzTd37g1D7fyKvaiJgCf6Hzn8lY8Fwr5YR5L3hN/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/23/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "d1e911596a1e1e71b972910ed9489abfd6b0c904"
+        },
+        {
+          "k": "repository",
+          "v": "KTrong04/demo-EP-2"
+        },
+        {
+          "k": "repository_owner",
+          "v": "KTrong04"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "178535413"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/KTrong04/demo-EP-2.git"
+        },
+        {
+          "k": "run_id",
+          "v": "18773113858"
+        },
+        {
+          "k": "run_number",
+          "v": "21"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "178535413"
+        },
+        {
+          "k": "actor",
+          "v": "KTrong04"
+        },
+        {
+          "k": "workflow",
+          "v": "CI/CD Pipeline (Docker-linked)"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "d1e911596a1e1e71b972910ed9489abfd6b0c904"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "31a977823d14a306c026b1b91f6b14fc9604cf9f"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "KTrongw2@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Tran Kim Trong"
+                              },
+                              {
+                                "k": "username",
+                                "v": "KTrong04"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "KTrongw2@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Tran Kim Trong"
+                              },
+                              {
+                                "k": "username",
+                                "v": "KTrong04"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "d1e911596a1e1e71b972910ed9489abfd6b0c904"
+                        },
+                        {
+                          "k": "message",
+                          "v": "TEST CI CD"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-10-24T14:40:06+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "c973055b4486c27e2b963cad7df325b1e10eeb8b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/KTrong04/demo-EP-2/commit/d1e911596a1e1e71b972910ed9489abfd6b0c904"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/KTrong04/demo-EP-2/compare/31a977823d14...d1e911596a1e"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "KTrongw2@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Tran Kim Trong"
+                          },
+                          {
+                            "k": "username",
+                            "v": "KTrong04"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "KTrongw2@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Tran Kim Trong"
+                          },
+                          {
+                            "k": "username",
+                            "v": "KTrong04"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "d1e911596a1e1e71b972910ed9489abfd6b0c904"
+                    },
+                    {
+                      "k": "message",
+                      "v": "TEST CI CD"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-10-24T14:40:06+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "c973055b4486c27e2b963cad7df325b1e10eeb8b"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/KTrong04/demo-EP-2/commit/d1e911596a1e1e71b972910ed9489abfd6b0c904"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "KTrongw2@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "KTrong04"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/KTrong04/demo-EP-2.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1761238557.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "KTrong04/demo-EP-2"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/KTrong04/demo-EP-2.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/KTrong04/demo-EP-2"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1082049917.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "demo-EP-2"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOQH7FfQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/178535413?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "KTrongw2@gmail.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/KTrong04/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/KTrong04/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/KTrong04/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/KTrong04/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/KTrong04"
+                          },
+                          {
+                            "k": "id",
+                            "v": 178535413.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "KTrong04"
+                          },
+                          {
+                            "k": "name",
+                            "v": "KTrong04"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCqQ79Q"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/KTrong04/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/KTrong04/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/KTrong04/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/KTrong04/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/KTrong04/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/KTrong04"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1761291609.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 1349.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:KTrong04/demo-EP-2.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/KTrong04/demo-EP-2"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-10-24T07:19:07Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/KTrong04/demo-EP-2"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/178535413?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/KTrong04/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/KTrong04/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/KTrong04/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/KTrong04/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/KTrong04"
+                    },
+                    {
+                      "k": "id",
+                      "v": 178535413.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "KTrong04"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCqQ79Q"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/KTrong04/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/KTrong04/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/KTrong04/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/KTrong04/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/KTrong04/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/KTrong04"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "KTrong04/demo-EP-2/.github/workflows/ci-cd.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "d1e911596a1e1e71b972910ed9489abfd6b0c904"
+        },
+        {
+          "k": "repository_id",
+          "v": "1082049917"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "KTrong04"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 53561679693.0
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2,
+      "d": [
+        {
+          "k": "build-and-push",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "result",
+                "v": "success"
+              },
+              {
+                "k": "outputs",
+                "v": {
+                  "t": 2
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCqQ79Q"
+}
+[2025-10-24 07:56:38Z INFO JobRunner] Job ID f65c00ee-4121-598d-a3cb-9219bff7025d
+[2025-10-24 07:56:38Z INFO ConfigurationStore] currentAssemblyLocation: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin\Runner.Worker.dll
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] binPath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] RootFolder: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Runner': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.runner'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] ConfigFilePath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.runner
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.runner_migrated'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] MigratedConfigFilePath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.runner_migrated
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Credentials': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] CredFilePath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials_migrated'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] MigratedCredFilePath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials_migrated
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Service': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.service'
+[2025-10-24 07:56:38Z INFO ConfigurationStore] ServiceConfigFilePath: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.service
+[2025-10-24 07:56:38Z INFO ConfigurationStore] Read setting file: 397 chars
+[2025-10-24 07:56:38Z INFO JobRunner] Initializing launch client
+[2025-10-24 07:56:38Z INFO JobServerQueue] Initializing results client
+[2025-10-24 07:56:38Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-10-24 07:56:38Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-10-24 07:56:38Z INFO JobServerQueue] Start process web console line queue.
+[2025-10-24 07:56:38Z INFO JobServerQueue] Start process file upload queue.
+[2025-10-24 07:56:38Z INFO JobServerQueue] Start results file upload queue.
+[2025-10-24 07:56:38Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-10-24 07:56:38Z INFO JobServerQueue] Start process timeline update queue.
+[2025-10-24 07:56:38Z INFO ExecutionContext] Initializing Job context
+[2025-10-24 07:56:38Z INFO ExecutionContext] Initialize GitHub context
+[2025-10-24 07:56:38Z INFO ExecutionContext] Initialize Env context
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:38Z INFO JobRunner] Starting the job execution context.
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO JobRunner] Validating directory permissions for: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Tools': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_tool'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:38Z INFO JobRunner] Getting job extension.
+[2025-10-24 07:56:38Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'Credentials': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.credentials'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known config file 'SetupInfo': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\.setup_info'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_PipelineMapping\KTrong04/demo-EP-2\PipelineFolder.json
+[2025-10-24 07:56:38Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO JobExtension] Downloading actions
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:38Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:38Z INFO Worker] Listening for cancel message from the channel.
+[2025-10-24 07:56:38Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-10-24 07:56:39Z INFO ResultServer] Successfully started websocket client.
+[2025-10-24 07:56:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'af0823f3-b963-44c6-a5ec-73a1bbfc1ed9', success rate: 1/1.
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:39Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:39Z INFO ActionManager] Save archive 'https://api.github.com/repos/docker/login-action/zipball/5e57cd118135c172c3672efd75eb46360885c0ef' into D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\_temp_dc18475c-c8d5-4bbd-9078-09a179a2d10b\1f9c5a25-b782-4ab3-92aa-de4c9ed6858d.zip.
+[2025-10-24 07:56:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'af0823f3-b963-44c6-a5ec-73a1bbfc1ed9', success rate: 1/1.
+[2025-10-24 07:56:39Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-10-24 07:56:41Z INFO ActionManager] Request URL: https://api.github.com/repos/docker/login-action/zipball/5e57cd118135c172c3672efd75eb46360885c0ef X-GitHub-Request-Id: BC0F:218688:1DACBF:3C53F5:68FB3137 Http Status: OK
+[2025-10-24 07:56:41Z INFO ActionManager] Finished getting action repository.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property author.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property branding.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Login",
+  "description": "GitHub Action to login against a Docker registry",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 10,
+          "col": 3,
+          "lit": "registry"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 13,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 16,
+          "col": 3,
+          "lit": "password"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 19,
+          "col": 3,
+          "lit": "ecr"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 22,
+          "col": 3,
+          "lit": "logout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 26,
+          "col": 3,
+          "lit": "registry-auth"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-10-24 07:56:41Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManager] Load action that reference repository from 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\docker\login-action\v3'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property author.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property branding.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Login",
+  "description": "GitHub Action to login against a Docker registry",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 10,
+          "col": 3,
+          "lit": "registry"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 13,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 16,
+          "col": 3,
+          "lit": "password"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 19,
+          "col": 3,
+          "lit": "ecr"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 22,
+          "col": 3,
+          "lit": "logout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 26,
+          "col": 3,
+          "lit": "registry-auth"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-10-24 07:56:41Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-10-24 07:56:41Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-10-24 07:56:41Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO JobExtension] Adding .
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'af0823f3-b963-44c6-a5ec-73a1bbfc1ed9', success rate: 1/1.
+[2025-10-24 07:56:41Z INFO JobExtension] Total accessible running process: 292.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO JobExtension] Start checking service connectivity in background.
+[2025-10-24 07:56:41Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "af0823f3-b963-44c6-a5ec-73a1bbfc1ed9",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2025-10-24T07:56:38.5936977Z",
+  "finishTime": "2025-10-24T07:56:41.2620084Z"
+}.
+[2025-10-24 07:56:41Z INFO JobRunner] Total job steps: 6.
+[2025-10-24 07:56:41Z INFO JobRunner] Run all job steps.
+[2025-10-24 07:56:41Z INFO StepsRunner] Processing step: DisplayName='Check Docker environment'
+[2025-10-24 07:56:41Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:56:41Z INFO StepsRunner] Result: true
+[2025-10-24 07:56:41Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:56:41Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Process started with process id 4824, waiting for process exit.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Finished process 4824 with exit code 0, and elapsed time 00:00:00.0133435.
+[2025-10-24 07:56:41Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:41Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:56:41Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:41Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:41Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:41Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\8f68fd5e-7447-4704-b6ab-7d670c36cd10.cmd""'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Process started with process id 18948, waiting for process exit.
+[2025-10-24 07:56:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'efb1d993-5426-4ff0-a875-cf3241207230', success rate: 1/1.
+[2025-10-24 07:56:41Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:56:41Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_af0823f3-b963-44c6-a5ec-73a1bbfc1ed9.1
+[2025-10-24 07:56:41Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Finished process 18948 with exit code 0, and elapsed time 00:00:00.5519378.
+[2025-10-24 07:56:41Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_10315d25-bbe2-48cb-b212-38ea1ba51950) is empty; skipping attachment upload
+[2025-10-24 07:56:41Z INFO StepsRunner] Step result: 
+[2025-10-24 07:56:41Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "efb1d993-5426-4ff0-a875-cf3241207230",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-10-24T07:56:41.2716989Z",
+  "finishTime": "2025-10-24T07:56:41.8824714Z"
+}.
+[2025-10-24 07:56:41Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:56:41Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:56:41Z INFO StepsRunner] Processing step: DisplayName='Docker login'
+[2025-10-24 07:56:41Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:56:41Z INFO StepsRunner] Result: true
+[2025-10-24 07:56:41Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:56:41Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Process started with process id 21564, waiting for process exit.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Finished process 21564 with exit code 0, and elapsed time 00:00:00.0080680.
+[2025-10-24 07:56:41Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManager] Load action that reference repository from 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\docker\login-action\v3'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property author.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Ignore action property branding.
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Login",
+  "description": "GitHub Action to login against a Docker registry",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 10,
+          "col": 3,
+          "lit": "registry"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 13,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 16,
+          "col": 3,
+          "lit": "password"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 19,
+          "col": 3,
+          "lit": "ecr"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 22,
+          "col": 3,
+          "lit": "logout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 26,
+          "col": 3,
+          "lit": "registry-auth"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-10-24 07:56:41Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-10-24 07:56:41Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-10-24 07:56:41Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-10-24 07:56:41Z INFO ExecutionContext] Reserve record order 8 to 14 for post job actions.
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:41Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Input 'registry': default value evaluate result: ""
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Input 'ecr': default value evaluate result: ""
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Input 'logout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "true"
+}
+[2025-10-24 07:56:41Z INFO ActionManifestManager] Input 'registry-auth': default value evaluate result: ""
+[2025-10-24 07:56:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:56:41Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:41Z INFO HostContext] Well known directory 'Externals': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\externals'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   File name: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\externals\node20\bin\node.exe'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Arguments: '"D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\docker\login-action\v3\dist/index.js"'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'efb1d993-5426-4ff0-a875-cf3241207230', success rate: 1/1.
+[2025-10-24 07:56:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '57b9d163-0b48-4764-90d1-10952adda73d', success rate: 1/1.
+[2025-10-24 07:56:42Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-10-24 07:56:42Z INFO ProcessInvokerWrapper] Process started with process id 5316, waiting for process exit.
+[2025-10-24 07:56:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '57b9d163-0b48-4764-90d1-10952adda73d', success rate: 1/1.
+[2025-10-24 07:56:43Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-10-24 07:56:44Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:56:44Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_efb1d993-5426-4ff0-a875-cf3241207230.1
+[2025-10-24 07:56:45Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Finished process 5316 with exit code 0, and elapsed time 00:00:08.1256134.
+[2025-10-24 07:56:50Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_a903665f-e28d-4bc6-834e-33d5c62e5b3a) is empty; skipping attachment upload
+[2025-10-24 07:56:50Z INFO StepsRunner] Step result: 
+[2025-10-24 07:56:50Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "docker/login-action",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "57b9d163-0b48-4764-90d1-10952adda73d",
+  "stepContextName": "__docker_login-action",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 9,
+  "startTime": "2025-10-24T07:56:41.8834414Z",
+  "finishTime": "2025-10-24T07:56:50.0354118Z"
+}.
+[2025-10-24 07:56:50Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:56:50Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:56:50Z INFO StepsRunner] Processing step: DisplayName='Stop old containers'
+[2025-10-24 07:56:50Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:56:50Z INFO StepsRunner] Result: true
+[2025-10-24 07:56:50Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:56:50Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Process started with process id 13928, waiting for process exit.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Finished process 13928 with exit code 0, and elapsed time 00:00:00.0104944.
+[2025-10-24 07:56:50Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:56:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:56:50Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\c3deab03-aeab-4757-8318-61c818a71ee9.cmd""'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Process started with process id 19640, waiting for process exit.
+[2025-10-24 07:56:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '57b9d163-0b48-4764-90d1-10952adda73d', success rate: 1/1.
+[2025-10-24 07:56:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a155f894-dba3-4342-b4eb-7b8d1492e57d', success rate: 1/1.
+[2025-10-24 07:56:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a155f894-dba3-4342-b4eb-7b8d1492e57d', success rate: 1/1.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Finished process 19640 with exit code 0, and elapsed time 00:00:00.5489940.
+[2025-10-24 07:56:50Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_2ae51346-ba24-4402-be0b-9b183c8b3f52) is empty; skipping attachment upload
+[2025-10-24 07:56:50Z INFO StepsRunner] Step result: 
+[2025-10-24 07:56:50Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "a155f894-dba3-4342-b4eb-7b8d1492e57d",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-10-24T07:56:50.0365278Z",
+  "finishTime": "2025-10-24T07:56:50.6082601Z"
+}.
+[2025-10-24 07:56:50Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:56:50Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:56:50Z INFO StepsRunner] Processing step: DisplayName='Pull images'
+[2025-10-24 07:56:50Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:56:50Z INFO StepsRunner] Result: true
+[2025-10-24 07:56:50Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:56:50Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Process started with process id 23180, waiting for process exit.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Finished process 23180 with exit code 0, and elapsed time 00:00:00.0102038.
+[2025-10-24 07:56:50Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:56:50Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:56:50Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:56:50Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:50Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:56:50Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\f53c8b24-984a-4431-a090-21d0bf6240b3.cmd""'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:56:50Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:56:50Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_57b9d163-0b48-4764-90d1-10952adda73d.1
+[2025-10-24 07:56:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:50Z INFO ProcessInvokerWrapper] Process started with process id 18468, waiting for process exit.
+[2025-10-24 07:56:50Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-10-24 07:56:51Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:56:51Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:56:51Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:56:51Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:56:51Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_a155f894-dba3-4342-b4eb-7b8d1492e57d.1
+[2025-10-24 07:56:52Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-10-24 07:56:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:56:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:01Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:01Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:01Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:11Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:11Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:11Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:21Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:21Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:21Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8b468c00-6945-4a84-bbcf-a0eb64783159', success rate: 1/1.
+[2025-10-24 07:57:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:30Z INFO ProcessInvokerWrapper] Finished process 18468 with exit code 0, and elapsed time 00:00:40.3664892.
+[2025-10-24 07:57:31Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_8000e7e5-1f4b-44c2-aa87-f3d9dbdf3e89) is empty; skipping attachment upload
+[2025-10-24 07:57:31Z INFO StepsRunner] Step result: 
+[2025-10-24 07:57:31Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "8b468c00-6945-4a84-bbcf-a0eb64783159",
+  "stepContextName": "__run_3",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 41,
+  "startTime": "2025-10-24T07:56:50.609319Z",
+  "finishTime": "2025-10-24T07:57:31.01246Z"
+}.
+[2025-10-24 07:57:31Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:57:31Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:57:31Z INFO StepsRunner] Processing step: DisplayName='Generate .env for compose'
+[2025-10-24 07:57:31Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:57:31Z INFO StepsRunner] Result: true
+[2025-10-24 07:57:31Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:57:31Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Process started with process id 13796, waiting for process exit.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Finished process 13796 with exit code 0, and elapsed time 00:00:00.0223237.
+[2025-10-24 07:57:31Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:57:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:57:31Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\511bacc5-7c3b-4815-98fe-f335e940849f.cmd""'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Process started with process id 13728, waiting for process exit.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Finished process 13728 with exit code 0, and elapsed time 00:00:00.0657517.
+[2025-10-24 07:57:31Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_40ace3c5-d6b6-4e3e-bfa8-8bcedc230c93) is empty; skipping attachment upload
+[2025-10-24 07:57:31Z INFO StepsRunner] Step result: 
+[2025-10-24 07:57:31Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "d3700b2b-6481-4e9a-b3e2-7a817479b273",
+  "stepContextName": "__run_4",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-10-24T07:57:31.0282504Z",
+  "finishTime": "2025-10-24T07:57:31.1617177Z"
+}.
+[2025-10-24 07:57:31Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:57:31Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:57:31Z INFO StepsRunner] Processing step: DisplayName='Up with docker compose'
+[2025-10-24 07:57:31Z INFO StepsRunner] Evaluating: success()
+[2025-10-24 07:57:31Z INFO StepsRunner] Result: true
+[2025-10-24 07:57:31Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:57:31Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Process started with process id 21728, waiting for process exit.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Finished process 21728 with exit code 0, and elapsed time 00:00:00.0169215.
+[2025-10-24 07:57:31Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:57:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:57:31Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:57:31Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Which2: 'cmd'
+[2025-10-24 07:57:31Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\2a30888c-8817-4559-9de6-4724910ae2ee.cmd""'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd3700b2b-6481-4e9a-b3e2-7a817479b273', success rate: 1/1.
+[2025-10-24 07:57:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:31Z INFO ProcessInvokerWrapper] Process started with process id 23720, waiting for process exit.
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:31Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:31Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:57:31Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_8b468c00-6945-4a84-bbcf-a0eb64783159.1
+[2025-10-24 07:57:32Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-10-24 07:57:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:32Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:57:32Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_d3700b2b-6481-4e9a-b3e2-7a817479b273.1
+[2025-10-24 07:57:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:33Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-10-24 07:57:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:41Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:41Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:41Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:41Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2025-10-24 07:57:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Finished process 23720 with exit code 0, and elapsed time 00:00:15.3834840.
+[2025-10-24 07:57:46Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_45200418-67df-4fa0-8547-d5cf04088a86) is empty; skipping attachment upload
+[2025-10-24 07:57:46Z INFO StepsRunner] Step result: 
+[2025-10-24 07:57:46Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "577699f8-02f0-48ce-96b0-988379c941c3",
+  "stepContextName": "__run_5",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 16,
+  "startTime": "2025-10-24T07:57:31.1630846Z",
+  "finishTime": "2025-10-24T07:57:46.5825085Z"
+}.
+[2025-10-24 07:57:46Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:57:46Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:57:46Z INFO StepsRunner] Processing step: DisplayName='Post Docker login'
+[2025-10-24 07:57:46Z INFO StepsRunner] Evaluating: always()
+[2025-10-24 07:57:46Z INFO StepsRunner] Result: true
+[2025-10-24 07:57:46Z INFO StepsRunner] Starting the step.
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO StepsRunner] Which2: 'chcp'
+[2025-10-24 07:57:46Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Process started with process id 14064, waiting for process exit.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Finished process 14064 with exit code 0, and elapsed time 00:00:00.0148954.
+[2025-10-24 07:57:46Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:57:46Z INFO ActionManager] Load action that reference repository from 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\docker\login-action\v3'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Actions': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions'
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Ignore action property author.
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Ignore action property branding.
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Docker Login",
+  "description": "GitHub Action to login against a Docker registry",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 10,
+          "col": 3,
+          "lit": "registry"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 13,
+          "col": 3,
+          "lit": "username"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 16,
+          "col": 3,
+          "lit": "password"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 19,
+          "col": 3,
+          "lit": "ecr"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 22,
+          "col": 3,
+          "lit": "logout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 26,
+          "col": 3,
+          "lit": "registry-auth"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-10-24 07:57:46Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-10-24 07:57:46Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-10-24 07:57:46Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:46Z INFO ExecutionContext] Write event payload to D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Work': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Temp': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp'
+[2025-10-24 07:57:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Input 'registry': default value evaluate result: ""
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Input 'ecr': default value evaluate result: ""
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Input 'logout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "true"
+}
+[2025-10-24 07:57:46Z INFO ActionManifestManager] Input 'registry-auth': default value evaluate result: ""
+[2025-10-24 07:57:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command error
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command group
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-10-24 07:57:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:46Z INFO HostContext] Well known directory 'Externals': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\externals'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   File name: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\externals\node20\bin\node.exe'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Arguments: '"D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_actions\docker\login-action\v3\dist/index.js"'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Working directory: 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\demo-EP-2\demo-EP-2'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-10-24 07:57:46Z INFO ProcessInvokerWrapper] Process started with process id 4184, waiting for process exit.
+[2025-10-24 07:57:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '577699f8-02f0-48ce-96b0-988379c941c3', success rate: 1/1.
+[2025-10-24 07:57:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9ec42611-fcbd-4eb6-b448-89eb84036c97', success rate: 1/1.
+[2025-10-24 07:57:47Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-10-24 07:57:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:57:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_577699f8-02f0-48ce-96b0-988379c941c3.1
+[2025-10-24 07:57:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9ec42611-fcbd-4eb6-b448-89eb84036c97', success rate: 1/1.
+[2025-10-24 07:57:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-10-24 07:57:48Z INFO ProcessInvokerWrapper] Finished process 4184 with exit code 0, and elapsed time 00:00:01.4029340.
+[2025-10-24 07:57:48Z INFO CreateStepSummaryCommand] Step Summary file (D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp\_runner_file_commands\step_summary_a8f4861b-2085-4186-bc6e-d48046d3ea3e) is empty; skipping attachment upload
+[2025-10-24 07:57:48Z INFO StepsRunner] Step result: 
+[2025-10-24 07:57:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "docker/login-action",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "9ec42611-fcbd-4eb6-b448-89eb84036c97",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-10-24T07:57:46.5849757Z",
+  "finishTime": "2025-10-24T07:57:48.0221673Z"
+}.
+[2025-10-24 07:57:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-10-24 07:57:48Z INFO StepsRunner] Current state: job state = ''
+[2025-10-24 07:57:48Z INFO JobRunner] Finalize job.
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:48Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:57:48Z INFO JobExtension] Initialize Env context
+[2025-10-24 07:57:48Z INFO JobExtension] Initialize steps context
+[2025-10-24 07:57:48Z INFO JobExtension] Total accessible running process: 293.
+[2025-10-24 07:57:48Z INFO JobExtension] Inspecting process environment variables. PID: 23624 (chrome)
+[2025-10-24 07:57:48Z INFO JobExtension] Inspecting process environment variables. PID: 8724 (chrome)
+[2025-10-24 07:57:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "7c882a18-bde0-4dc3-b9c3-88ac3d1d2d93",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-10-24T07:57:48.0302429Z",
+  "finishTime": "2025-10-24T07:57:48.0747374Z"
+}.
+[2025-10-24 07:57:48Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2025-10-24 07:57:48Z INFO JobRunner] Completing the job execution context.
+[2025-10-24 07:57:48Z INFO JobRunner] Shutting down the job server queue.
+[2025-10-24 07:57:48Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-10-24 07:57:48Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-10-24 07:57:49Z INFO JobServerQueue] All queue process task stopped.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9ec42611-fcbd-4eb6-b448-89eb84036c97', success rate: 1/1.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7c882a18-bde0-4dc3-b9c3-88ac3d1d2d93', success rate: 1/1.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Web console line queue drained.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-10-24 07:57:49Z INFO JobServerQueue] File upload queue drained.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-10-24 07:57:49Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:57:49Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_9ec42611-fcbd-4eb6-b448-89eb84036c97.1
+[2025-10-24 07:57:50Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-10-24 07:57:50Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_7c882a18-bde0-4dc3-b9c3-88ac3d1d2d93.1
+[2025-10-24 07:57:51Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-10-24 07:57:51Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\blocks\416a4556-1ca7-4a45-8a78-5786fef28142_f65c00ee-4121-598d-a3cb-9219bff7025d.1
+[2025-10-24 07:57:51Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2025-10-24 07:57:51Z INFO JobServerQueue] Results upload queue drained.
+[2025-10-24 07:57:52Z INFO JobServerQueue] Timeline update queue drained.
+[2025-10-24 07:57:52Z INFO JobServerQueue] Disposing job server ...
+[2025-10-24 07:57:52Z INFO JobServerQueue] Disposing results server ...
+[2025-10-24 07:57:52Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-10-24 07:57:52Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_work\_temp
+[2025-10-24 07:57:52Z INFO HostContext] Well known directory 'Bin': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\bin'
+[2025-10-24 07:57:52Z INFO HostContext] Well known directory 'Root': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner'
+[2025-10-24 07:57:52Z INFO HostContext] Well known directory 'Diag': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag'
+[2025-10-24 07:57:52Z INFO HostContext] Well known config file 'Telemetry': 'D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1\actions-runner\_diag\.telemetry'
+[2025-10-24 07:57:52Z INFO JobRunner] Raising job completed against run service
+[2025-10-24 07:57:53Z INFO Worker] Job completed.

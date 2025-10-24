@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "KTrong04/demo-EP-2",
+  "pipelineDirectory": "demo-EP-2",
+  "workspaceDirectory": "demo-EP-2\\demo-EP-2",
+  "repositories": {
+    "KTrong04/demo-EP-2": {
+      "repositoryPath": "demo-EP-2\\demo-EP-2",
+      "lastRunOn": "10/24/2025 14:56:38 +07:00"
+    }
+  },
+  "lastRunOn": "10/24/2025 14:56:38 +07:00"
+}
