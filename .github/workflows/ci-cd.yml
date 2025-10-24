@@ -69,6 +69,9 @@ jobs:
           AUTH_SERVICE_URL=http://127.0.0.1:3000
           EOF
 
+        # 👇 Thêm bước chờ Mongo
+      - name: Wait for Mongo
+        run: timeout 60 bash -c 'until nc -z mongo 27017; do sleep 1; done'
       # ------------------------------
       # Run Auth Tests
       # ------------------------------
