@@ -33,12 +33,16 @@ jobs:
         options: >-
           --health-cmd="rabbitmq-diagnostics -q ping"
           --health-interval=5s --health-timeout=5s --health-retries=20
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
 
+      # ------------------------------
+      # Create .env for services
+      # ------------------------------
       - name: Create .env for services
         run: |
           mkdir -p auth product
@@ -52,7 +56,18 @@ jobs:
           MONGODB_PRODUCT_URI=mongodb://127.0.0.1:27017/product_test
           JWT_SECRET=${{ secrets.JWT_SECRET }}
           RABBITMQ_URI=amqp://127.0.0.1:5672
+          AUTH_SERVICE_URL=http://127.0.0.1:3000
           EOF
+
+      # ------------------------------
+      # Wait for MongoDB
+      # ------------------------------
+      - name: Wait for MongoDB
+        run: timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/27017; do sleep 1; done'
+
+      # ------------------------------
+      # Install & Test (auth)
+      # ------------------------------
       - name: Install & Test (auth)
         working-directory: ./auth
         env: { NODE_ENV: test }
@@ -60,16 +75,52 @@ jobs:
           npm ci
           npm i -D chai@4.3.10 chai-http@4.4.0 mocha@10.3.0
           npm test
+
+      # ------------------------------
+      # Start auth server (background)
+      # ------------------------------
       - name: Start auth server (background)
         working-directory: ./auth
         env: { NODE_ENV: test }
         run: |
           nohup npm start >/tmp/auth.log 2>&1 &
+          echo "⏳ Starting Auth service..."
           timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/3000; do sleep 1; done'
-          echo "Auth server is up"
+          echo "✅ Auth server is up"
+          sleep 5
+
+      # ------------------------------
+      # Register test user (for Product & Order)
+      # ------------------------------
+      - name: Register test user
+        env:
+          LOGIN_TEST_USER: ${{ secrets.LOGIN_TEST_USER }}
+          LOGIN_TEST_PASSWORD: ${{ secrets.LOGIN_TEST_PASSWORD }}
+        run: |
+          echo "Registering test user..."
+          curl -s -o /dev/null -w "%{http_code}" -X POST http://127.0.0.1:3000/register \
+            -H "Content-Type: application/json" \
+            -d "{\"username\": \"$LOGIN_TEST_USER\", \"password\": \"$LOGIN_TEST_PASSWORD\"}" || true
+          sleep 2
+
+      # ------------------------------
+      # Check Auth logs
+      # ------------------------------
+      - name: Check Auth logs
+        if: always()
+        run: |
+          echo "----- AUTH LOG (last 15 lines) -----"
+          tail -n 15 /tmp/auth.log
+
+      # ------------------------------
+      # Wait for RabbitMQ
+      # ------------------------------
       - name: Wait for RabbitMQ
         run: timeout 60 bash -c 'until echo > /dev/tcp/127.0.0.1/5672; do sleep 1; done'
 
+      # ------------------------------
+      # Install & Test (product)
+      # ------------------------------
       - name: Install & Test (product)
         working-directory: ./product
         env:
@@ -78,10 +129,13 @@ jobs:
           LOGIN_TEST_PASSWORD: ${{ secrets.LOGIN_TEST_PASSWORD }}
           MONGODB_PRODUCT_URI: mongodb://127.0.0.1:27017/product_test
           RABBITMQ_URI: amqp://127.0.0.1:5672
+          AUTH_SERVICE_URL: http://127.0.0.1:3000
         run: |
           npm ci
           npm i -D chai@4.3.10 chai-http@4.4.0 mocha@10.3.0
-          npm test
+          echo "Running Product tests..."
+          npm test || (echo "❌ Product test failed — showing auth log for debugging:" && tail -n 30 /tmp/auth.log && exit 1)
+
   # ===========================================
   # 2) BUILD + PUSH DOCKER
   # ===========================================
@@ -118,6 +172,7 @@ jobs:
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.created=${{ github.run_id }}
+
       - name: Build & Push ${{ matrix.service }}
         uses: docker/build-push-action@v6
         with:
@@ -140,12 +195,14 @@ jobs:
     env:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       IMAGE_TAG: latest
+
     steps:
       - name: Check Docker environment
         shell: cmd
         run: |
           docker --version
           docker compose version
+
       - name: Docker login
         uses: docker/login-action@v3
         with:
@@ -157,6 +214,7 @@ jobs:
         run: |
           cd /d "D:\HK\HK7\Lap-trinh-huong-dich-vu\OnTap\TH\demo-2\EProject-Phase-1"
           docker compose down --remove-orphans || exit /b 0
+
       - name: Pull images
         shell: cmd
         run: |
@@ -164,6 +222,7 @@ jobs:
           docker pull %DOCKERHUB_USERNAME%/auth:%IMAGE_TAG%
           docker pull %DOCKERHUB_USERNAME%/product:%IMAGE_TAG%
           docker pull %DOCKERHUB_USERNAME%/order:%IMAGE_TAG%
+
       - name: Generate .env for compose
         shell: cmd
         run: |
@@ -172,6 +231,7 @@ jobs:
             echo DOCKERHUB_USERNAME=%DOCKERHUB_USERNAME%
             echo IMAGE_TAG=%IMAGE_TAG%
           )
+
       - name: Up with docker compose
         shell: cmd
         run: |

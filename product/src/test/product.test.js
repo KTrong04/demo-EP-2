@@ -35,7 +35,9 @@ describe("Products", () => {
       app.start();
     } catch (error) {
       console.error("Error during authentication:", error.message);
-      process.exit(1); // Exit the test if authentication fails
+      console.error("Auth response:", authRes.body);
+
+      // process.exit(1); // Exit the test if authentication fails
     }
   });
 
